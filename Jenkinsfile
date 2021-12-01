@@ -12,6 +12,7 @@ pipeline {
                 sh '''
                     python --version
                     cat /tmp/helloFromDockerfile
+                    cat /etc/passwd
                    '''    
             }
         }
