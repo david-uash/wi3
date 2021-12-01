@@ -1,10 +1,6 @@
 pipeline {
-    agent { docker 
-           { 
-#               image 'python'
-#               args '-u root' 
-                dockerfile true
-           } 
+    agent {
+                dockerfile true            
           }
     environment {
         ACCKEY=credentials('ACCKEY')
