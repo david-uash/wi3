@@ -11,7 +11,7 @@ pipeline {
             steps {
                 sh '''
                     python --version
-                    cat /root/helloFromDockerfile
+                    cat /tmp/helloFromDockerfile
                    '''    
             }
         }

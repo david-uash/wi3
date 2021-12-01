@@ -1,4 +1,4 @@
 FROM python
-RUN echo "hello world" >>  /root/helloFromDockerfile
+RUN echo "hello world" >>  /tmp/helloFromDockerfile
 
 
