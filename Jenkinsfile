@@ -1,8 +1,9 @@
 pipeline {
     agent { docker 
            { 
-               image 'python'
-               args '-u root' 
+#               image 'python'
+#               args '-u root' 
+                dockerfile true
            } 
           }
     environment {
@@ -14,6 +15,7 @@ pipeline {
             steps {
                 sh '''
                     python --version
+                    cat /root/helloFromDockerfile
                    '''    
             }
         }
